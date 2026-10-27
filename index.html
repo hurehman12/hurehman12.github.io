@@ -1,16 +1,388 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS 499 ePortfolio</title>
+    <meta name="description" content="Computer Science ePortfolio showcasing software engineering, algorithms, and database development.">
+    <title>Haseeb Rehman | Computer Science Portfolio</title>
+
+    <style>
+        :root {
+            --navy: #0f172a;
+            --blue: #2563eb;
+            --light: #f8fafc;
+            --text: #334155;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--light);
+        }
+
+        .container {
+            width: min(1100px, 92%);
+            margin: auto;
+        }
+
+        header {
+            background: var(--navy);
+            color: white;
+            padding: 18px 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .brand {
+            font-weight: 700;
+            font-size: 1.15rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        a:focus-visible {
+            outline: 3px solid #f59e0b;
+            outline-offset: 4px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #1e40af);
+            color: white;
+            padding: 90px 0;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            max-width: 710px;
+            font-size: 1.1rem;
+            color: #e2e8f0;
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #bfdbfe;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 12px 24px;
+            background: white;
+            color: #1e3a8a;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .button:hover {
+            background: #dbeafe;
+        }
+
+        section {
+            padding: 55px 0;
+            scroll-margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            color: var(--navy);
+            margin: 0 0 15px;
+        }
+
+        h3 {
+            color: var(--navy);
+            margin-top: 0;
+        }
+
+        .section-intro {
+            max-width: 760px;
+            margin-bottom: 28px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 26px;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+        }
+
+        .card p {
+            margin-bottom: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .featured {
+            background: #eff6ff;
+            border-top: 1px solid #dbeafe;
+            border-bottom: 1px solid #dbeafe;
+        }
+
+        .panel {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+        }
+
+        footer {
+            background: var(--navy);
+            color: #cbd5e1;
+            padding: 28px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        @media (max-width: 800px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            nav {
+                gap: 12px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Computer Science ePortfolio</h1>
-    <h2>CS 499 - Computer Science Capstone</h2>
-    <p>Welcome to my professional computer science portfolio.</p>
-    <p>This portfolio will demonstrate my work in
-       software engineering, algorithms and data
-       structures, and databases.</p>
+
+    <header>
+        <div class="container nav">
+            <div class="brand">HR | Computer Science</div>
+            <nav aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#enhancements">Enhancements</a>
+                <a href="#code-review">Code Review</a>
+                <a href="#self-assessment">Self-Assessment</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="hero" id="home">
+            <div class="container">
+                <div class="eyebrow">CS 499 | Computer Science Capstone</div>
+                <h1>Haseeb Rehman</h1>
+                <p>
+                    Software Developer | Enterprise Applications |
+                    Full-Stack Development
+                </p>
+                <p>
+                    Welcome to my computer science ePortfolio.
+                    This portfolio highlights my technical development,
+                    problem-solving abilities, and approach to building
+                    maintainable, secure software solutions.
+                </p>
+                <a class="button" href="#enhancements">
+                    Explore My Work
+                </a>
+            </div>
+        </div>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p class="section-intro">
+                    I am a computer science student at Southern New Hampshire
+                    University and a professional ServiceNow developer
+                    with experience in enterprise application development,
+                    database design, system integrations, and technical
+                    solution development.
+                </p>
+                <p>
+                    My professional goal is to continue developing toward
+                    solution and platform architecture. This ePortfolio
+                    demonstrates how I apply computer science principles
+                    across application design, algorithms, databases,
+                    and security.
+                </p>
+            </div>
+        </section>
+
+        <section class="featured" id="project">
+            <div class="container">
+                <h2>Featured Project: Travlr Getaways</h2>
+                <div class="panel">
+                    <span class="tag">CS 465 | Full-Stack Development</span>
+                    <h3>Travel Management Application</h3>
+                    <p>
+                        Travlr Getaways is a full-stack web application
+                        built using MongoDB, Express, Angular, and Node.js.
+                        It includes a customer-facing travel website,
+                        an administrative application, REST APIs,
+                        database operations, and JWT authentication.
+                    </p>
+                    <p>
+                        For CS 499, I am using this application as the
+                        foundation for three planned enhancements.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="enhancements">
+            <div class="container">
+                <h2>Capstone Enhancements</h2>
+                <p class="section-intro">
+                    The CS 499 capstone focuses on improving an existing
+                    software artifact in three key areas of computer science.
+                    Each enhancement will include the original implementation,
+                    updated source code, and a technical narrative.
+                </p>
+
+                <div class="grid">
+
+                    <article class="card">
+                        <span class="tag">Enhancement One</span>
+                        <h3>Software Design & Engineering</h3>
+                        <p>
+                            Planned improvements include application
+                            architecture, reusable service components,
+                            input validation, error handling,
+                            and automated testing.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="tag">Enhancement Two</span>
+                        <h3>Algorithms & Data Structures</h3>
+                        <p>
+                            A planned trip recommendation feature
+                            will demonstrate weighted scoring,
+                            heap-based priority queues,
+                            and algorithmic efficiency.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="tag">Enhancement Three</span>
+                        <h3>Databases</h3>
+                        <p>
+                            Planned MongoDB enhancements include
+                            schema validation, query optimization,
+                            indexing, and improved data retrieval.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="code-review" class="featured">
+            <div class="container">
+                <h2>Code Review</h2>
+                <div class="panel">
+                    <p>
+                        This section will contain my capstone code review,
+                        including analysis of the original Travlr application,
+                        existing limitations, and the planned enhancements.
+                    </p>
+                    <p><strong>Status:</strong> In progress</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="self-assessment">
+            <div class="container">
+                <h2>Professional Self-Assessment</h2>
+                <div class="panel">
+                    <p>
+                        My professional self-assessment will describe
+                        my development throughout the Computer Science
+                        program, connect my technical skills to the
+                        five course outcomes, and explain how the
+                        completed artifacts support my career goals.
+                    </p>
+                    <p><strong>Status:</strong> In progress</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Computer Science ePortfolio | CS 499</p>
+            <p>
+                <a href="https://github.com/hurehman12">
+                    View GitHub Profile
+                </a>
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
